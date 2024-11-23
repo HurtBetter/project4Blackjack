@@ -1,4 +1,4 @@
-class Hand():
+class Hand:
     def __init__(self):
         self.cards = []
 
@@ -28,12 +28,4 @@ class Hand():
             value += 10
 
         return value
-
-    def __unicode__(self):
-        soft = ' soft ' if self.is_soft() else ' '
-
-        return u"[%s] (value:%s%s)" % (', '.join(map(unicode, self.cards)), soft, self.value())
-
-    def __str__(self):
-        return unicode(self).encode('utf-8')
 
