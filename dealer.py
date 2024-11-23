@@ -2,7 +2,7 @@ from hand import Hand
 from player import Player
 
 
-class Dealer(Player):
+class Dealer:
     def __init__(self):
         self.hand = Hand()
         self.name = "Dealer"
